@@ -6,6 +6,7 @@ html{
 .navbar{
     font-family: 'ubuntu';
     transition: all 0.3s ease;
+    max-width: inherit;
 }
 .navbarspan{
     transition: all 0.3s ease;
@@ -15,8 +16,12 @@ html{
 }
 
 .home{
-    background: url("p.jpeg") no-repeat center;
+    background: url("images/p.jpeg") no-repeat center;
     font-family: 'Poppins',sans-serif;
+    max-width: inherit;
+}
+.about{
+  max-width: inherit;
 }
 .mytransition{
     transition: all 0.3s ease ;
@@ -78,6 +83,8 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: auto;
+
 }
 
 
@@ -167,61 +174,39 @@ html{
     opacity: 1;
   }
 
-@media (max-width: 768px){ 
-    .mobnav{
-        height: 100vh;
-        position: fixed;
-        background-color: black;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        
-        transition: all 0.5s ease;
-        
-        
-    
-    
-    }
-    .active {
-        height: 100vh;
-        position: fixed;
-        background-color: black;
-        top: 0;
-        left: 0;
-        width: 100%;
-        
-        transition: all 0.5s ease;
-        
-    }
-    
-    .mobnav ul{
-        display: block;
-        
-    }
-    .menu-btn i.active::before{
-        content: "\f00d";
-    }
-    .mypic{
 
-    }
-    .carousel-indicators{
-        position: absolute;
-        bottom: 12px;
+    
+    
+    
+    
+    
+    
+      @media (max-width: 768px){ 
+        .mobnav{
+            height: 100vh;
+            position: fixed;
+            background-color: black;
+            top: 0;
+            left: -100%;
+            
+            
+            transition: all 0.5s ease;
+            
+            
         
-        transform: translateX(-50%);
-        text-align: center;
+        
+        }
+        .mobnav ul{
+          display: block;
+          
       }
-      .carousel-indicators span{
-        display: flex;
-        flex-direction: row;
-        background-color: white;
-        width: 100%;
-        border-radius: 2px;
-        opacity: .5;
-        cursor: pointer;
-        margin: 3px;
+      .active {
+        
+        left: 0;
+        
+        
+        transition: all 0.5s ease;
+        
+    }
+    
       }
-      .carousel-indicators span.active{
-        opacity: 1;
-      }
-}
