@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        if(this.scrollY > 550){
+        if(this.scrollY > 20){
             $('.navbar').addClass("bg-rose-600");
             $('.navbar').addClass("pt-1");
             $('.navbarspan').removeClass("text-rose-600");
@@ -22,10 +22,7 @@ $(document).ready(function(){
 
     });
 
-    // mobile nav bar toogle
-    $('.menu-btn').click(function(){
-        $('.mobnav').toogleClass("active");
-    })
+    
 
     
 
@@ -42,9 +39,12 @@ function menuBtn() {
 
 
   $('.owl-carousel').owlCarousel({
+    
     loop:true,
     margin:10,
-    nav:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
