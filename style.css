@@ -16,7 +16,7 @@ html{
 }
 
 .home{
-    background: url("images/p.jpeg") no-repeat center;
+    background: url("p.jpeg") no-repeat center;
     font-family: 'Poppins',sans-serif;
     max-width: inherit;
 }
