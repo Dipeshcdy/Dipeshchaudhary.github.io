@@ -184,6 +184,7 @@ html{
       @media (max-width: 768px){ 
         .mobnav{
             height: 100vh;
+            Width: 100%;
             position: fixed;
             background-color: black;
             top: 0;
